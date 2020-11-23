@@ -1,0 +1,18 @@
+package tugasbesar;
+import java.util.Scanner;
+public class TugasBesar {
+      static Scanner input = new Scanner(System.in);
+      static String nama[] = new String[50];
+      static int mhs[][] = new int[50][5];
+      static int buku1[][] = new int[50][2];
+      static String buku2[][] = new String[50][2];
+      static int peminjam[][] =  new int[50][2];
+      static int banyak;
+      static int jmlpinjam;    
+      //static int 
+      static int jmlmhs;
+      public static void main(String[] args) {
+             char back;
+             int pilih;
+       }
+}
