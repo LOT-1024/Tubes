@@ -14,5 +14,33 @@ public class TugasBesar {
       public static void main(String[] args) {
              char back;
              int pilih;
+             do{
+                  System.out.println("\t\t\t*** KELOMPOK 2 ***");
+                  System.out.println("\t\t\t-- MENU UTAMA --");
+                  System.out.println("1. Input Buku");
+                  System.out.println("2. Daftar Buku");
+                  System.out.println("3. Pencarian");
+                  System.out.println("4. Peminjaman");            
+                  System.out.println("5. Pengembalian");
+                  System.out.println("6. Keluar\n");
+                  System.out.print("Masukan Pilihan : ");
+                  pilih = input.nextInt();
+                  switch(pilih){
+                        case 1:inputBuku();break;
+                        case 2:System.out.println("\t\t\t-- DAFTAR BUKU --\n");daftarBuku();break;
+                        case 3:cari();break;
+                        case 4:pinjamBuku();break;
+                        case 5:pengembalian();break;
+                        case 6:System.out.println("Anda telah keluar program !");break;
+                        default:System.out.println("Anda memasukan pilihan yang salah !");
+                        }
+                  if(pilih == 6){
+                        back ='T';}
+                  else{
+                        System.out.print("\n\nKembali ke Menu Utama ? [Y/T] : ");
+                        back = input.next().charAt(0);  
+                        System.out.println("-----------------------------------------------------------------");
+                  }   
+            }
        }
 }
